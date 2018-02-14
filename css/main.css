@@ -9,8 +9,9 @@ html{
 	background-image: url(../img/bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	font-size: 9px;
-	color: orange;
+	font-size: 10px;
+	letter-spacing: 3px;
+	font-weight: bold;
 	text-align: center;
 }
 
@@ -25,16 +26,14 @@ body{
 .clock{
 	height: 500px;
 	width: 500px;
-	border: 10px solid #fff;
+	box-shadow: 10px 10px 20px 15px rgba(0,0,0,0.75);
 	border-radius: 50%;
 	position: relative;
-	background-color: #03a9f4;
 }
 
 .bar{
 	width: 50%;
 	height: 15px;
-	background-color: #000;
 	position: absolute;
 	top: 50%;
 	line-height: 15px;
@@ -42,13 +41,21 @@ body{
 	transform-origin: 100%;
 	transition: all 0.05s;
 	transform: rotate(90deg);
+	box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.75);
 	transition-timing-function: cubic-bezier(0.1,2.7,0.58,1); 
 }
 
 .hour{
-	background-color: #f00;
+	background-color: #000;
+	color: #fff;
 }
 
 .min{
-	background-color: #fff;
+	background-color: #ff8a65;
+	color: #fff;
+}
+
+.second{
+	background-color: #ffee58;
+	color: #000;
 }

@@ -2,6 +2,10 @@
 
 function setDate() {
 
+	const tickSound = document.querySelector('.tick');
+	tickSound.currentTime = 0;
+	tickSound.play();
+
 	const secondClass = document.querySelector('.second');
 	const minClass = document.querySelector('.min');
 	const hourClass = document.querySelector('.hour');
