@@ -28,6 +28,8 @@ body{
 	width: 500px;
 	box-shadow: 10px 10px 20px 15px rgba(0,0,0,0.75);
 	border-radius: 50%;
+	background-image: url(../img/clock1.png);
+	background-size: cover;
 	position: relative;
 }
 
@@ -58,4 +60,16 @@ body{
 .second{
 	background-color: #ffee58;
 	color: #000;
+}
+
+.dot{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: 32px;
+	height: 32px;
+	background-color: #000; 
+	border-radius: 50%; 
 }
